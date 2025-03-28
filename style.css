@@ -8,6 +8,7 @@
     --accent-subtle: #4338ca;
     --transition-speed: 0.3s;
     --border-color: #2c3648;
+    --navbar-bg: #0f1625;
 }
 
 body.light-mode {
@@ -18,7 +19,7 @@ body.light-mode {
     --accent-color: #5b51d8;
     --accent-hover: #4338ca;
     --accent-subtle: #6366f1;
-    --navbar-bg: rgba(248, 250, 252, 0.85);
+    --navbar-bg: #f8fafc;
     --navbar-border: rgba(0,0,0,0.08);
 }
 
@@ -55,7 +56,6 @@ body {
     top: 0;
     left: 0;
     background-color: var(--navbar-bg);
-    backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     border-bottom: 1px solid var(--navbar-border);
@@ -227,9 +227,7 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-
 @media (max-width: 768px) {
-
     .projects-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -246,6 +244,7 @@ footer {
     #navbar .nav-content {
         height: 100%;
         padding: 0 1rem;
+        position: relative;
     }
 
     #mobile-menu-toggle {
@@ -259,20 +258,16 @@ footer {
         color: var(--text-secondary);
         font-size: 1.5rem;
         cursor: pointer;
-        z-index: 1001;
+        z-index: 1002;
     }
 
     #theme-toggle {
         position: absolute;
-        right: 2rem;
+        right: 1rem;
         top: 50%;
         transform: translateY(-50%);
         display: block;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-        gap: 1rem;
+        z-index: 1002;
     }
 
     .nav-menu {
@@ -284,9 +279,10 @@ footer {
         width: 100%;
         background-color: var(--bg-primary);
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         transform: translateY(-150%);
         transition: transform var(--transition-speed);
-        z-index: 1000;
+        z-index: 1001;
         padding-top: 1rem;
         align-items: center;
     }
@@ -310,6 +306,11 @@ footer {
     nav ul li a {
         display: block;
         padding: 0.5rem;
+    }
+
+    .logo {
+        z-index: 1002;
+        position: relative;
     }
 }
 
