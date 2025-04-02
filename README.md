@@ -36,4 +36,4 @@ Feel free to check out my work and reach out for collaboration or inquiries!
 
 ---
 
-Copyright © 2025 Ronen Lazowski | This website is licensed under the [AGPLv3 License](https://github.com/romi330/website/blob/main/LICENSE).
+Copyright © 2025 Ronen Lazowski | This website is licensed under the [AGPLv3 License](https://github.com/ronenlazowski/website/blob/main/LICENSE).
