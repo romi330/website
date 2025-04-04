@@ -121,6 +121,11 @@ nav ul li a:hover {
 
 #home .section-content {
     max-width: 800px;
+    display: flex;
+    flex-direction: row; /* Default to row for desktop */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 #home h1 {
@@ -228,6 +233,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .projects-container {
         display: grid;
         grid-template-columns: 1fr;
