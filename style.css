@@ -122,7 +122,7 @@ nav ul li a:hover {
 #home .section-content {
     max-width: 800px;
     display: flex;
-    flex-direction: row; /* Default to row for desktop */
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
