@@ -62,3 +62,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', handleMobileMenu);
 });
+
+document.querySelectorAll('.no-uri-change').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').replace('#', '');
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
