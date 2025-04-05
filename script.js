@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.addEventListener('click', closeMobileMenu);
             });
         } else {
+            
             mobileMenuToggle.style.display = 'none';
             navMenu.classList.remove('active');
             mobileMenuToggle.innerHTML = '☰';
